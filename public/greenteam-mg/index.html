@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Greenteam MG – Garten- & Servicearbeiten</title>
+  <meta name="description" content="Greenteam MG: Gartenpflege, Heckenschnitt, Rasen mähen, Entrümpelung, Winterdienst, Pflasterarbeiten, Kleintransporte, Zaunarbeiten. Schnell, sauber, zuverlässig.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    /* allow user to swap background/logo by uploading to /images */
+    :root{ --bg-image: url('./images/background.jpg'); }
+  </style>
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav class="header-nav">
+      <a href="#leistungen">Leistungen</a>
+      <a href="#preise">Preise</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <div class="hero-inner container">
+      <div class="brand">
+        <img src="./images/logo.png" alt="Greenteam MG Logo" onerror="this.style.display='none'">
+        <span class="name">Greenteam MG</span>
+      </div>
+      <h1>Kein Stress. Wir erledigen alles.</h1>
+      <p class="sub">Ihr zuverlässiger Partner in Mönchengladbach und Umgebung.</p>
+      <div class="cta">
+        <a class="btn" href="#kontakt">Jetzt anfragen</a>
+        <a class="btn outline" href="#leistungen">Unsere Leistungen</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="leistungen">
+      <div class="container">
+        <span class="badge">Was wir für Sie tun</span>
+        <h2>Leistungen</h2>
+        <p class="lead">Saubere Arbeit, faire Preise und schnelle Termine.</p>
+        <div class="grid cols-4">
+          <article class="card"><h3>Gartenpflege</h3><p>Pflege, Schnitt und Reinigung – alles aus einer Hand.</p></article>
+          <article class="card"><h3>Heckenschnitt</h3><p>Präziser Schnitt für dichte, gesunde Hecken.</p></article>
+          <article class="card"><h3>Rasen mähen</h3><p>Regelmäßiger Schnitt für einen gepflegten Eindruck.</p></article>
+          <article class="card"><h3>Entrümpelung</h3><p>Wir schaffen Platz – schnell und diskret.</p></article>
+          <article class="card"><h3>Winterdienst</h3><p>Schnee räumen und streuen – sicher durch den Winter.</p></article>
+          <article class="card"><h3>Pflasterarbeiten</h3><p>Wege, Einfahrten, Terrassen – robust und ordentlich.</p></article>
+          <article class="card"><h3>Kleintransporte</h3><p>Zuverlässig, flexibel und versichert unterwegs.</p></article>
+          <article class="card"><h3>Zaunarbeiten</h3><p>Montage, Reparatur und Instandhaltung.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="preise">
+      <div class="container">
+        <span class="badge">Transparent & fair</span>
+        <h2>Preise</h2>
+        <div class="pricing">
+          <div class="price-item"><span class="title">Gartenpflege</span><span>ab 25€</span></div>
+          <div class="price-item"><span class="title">Heckenschnitt</span><span>ab 30€</span></div>
+          <div class="price-item"><span class="title">Rasen mähen</span><span>ab 20€</span></div>
+          <div class="price-item"><span class="title">Entrümpelung</span><span>ab 25€</span></div>
+          <div class="price-item"><span class="title">Winterdienst</span><span>ab 20€</span></div>
+          <div class="price-item"><span class="title">Pflasterarbeiten</span><span>ab 35€</span></div>
+          <div class="price-item"><span class="title">Kleintransporte</span><span>ab 1€/km + 20€/Std.</span></div>
+          <div class="price-item"><span class="title">Zaunarbeiten</span><span>ab 30€</span></div>
+        </div>
+        <p class="dim" style="margin-top:12px">Materialkosten immer Vorkasse.</p>
+      </div>
+    </section>
+
+    <section class="section" id="kontakt">
+      <div class="container contact">
+        <form class="form" name="kontakt" onsubmit="submitForm(event)">
+          <h2>Kontakt</h2>
+          <div class="field"><label for="name">Name</label><input id="name" name="name" required placeholder="Ihr Name"></div>
+          <div class="field"><label for="telefon">Telefon</label><input id="telefon" name="telefon" required placeholder="Ihre Telefonnummer"></div>
+          <div class="field"><label for="email">E-Mail</label><input id="email" type="email" name="email" required placeholder="Ihre E-Mail-Adresse"></div>
+          <div class="field"><label for="nachricht">Nachricht</label><textarea id="nachricht" name="nachricht" required placeholder="Wie können wir helfen?"></textarea></div>
+          <button class="btn" type="submit">Nachricht senden</button>
+          <p id="form-status" class="dim" style="margin-top:10px"></p>
+        </form>
+        <aside class="aside">
+          <h3>Direkter Kontakt</h3>
+          <p>
+            Privatnummer:<br>
+            <a href="tel:01632622423">0163 2622423</a>
+          </p>
+          <p>
+            Geschäftlich:<br>
+            <a href="tel:015568296165">0155 68296165</a>
+          </p>
+          <p>
+            E-Mail:<br>
+            <a href="mailto:greenteam-mg@outlook.de">greenteam-mg@outlook.de</a>
+          </p>
+          <hr class="sep">
+          <p class="dim">Wir melden uns in der Regel noch am selben Tag.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap">
+      <div class="footer-links">
+        <a href="#" onclick="openDialog('impressum'); return false">Impressum</a>
+        <a href="#" onclick="openDialog('datenschutz'); return false">Datenschutz</a>
+        <a href="#" onclick="openDialog('widerruf'); return false">Widerruf</a>
+      </div>
+      <div class="copy">© <span id="year"></span> Greenteam MG</div>
+    </div>
+  </footer>
+
+  <!-- Dialogs -->
+  <div class="dialog-overlay" id="overlay" onclick="closeDialog()"></div>
+  <div class="dialog" id="dialog">
+    <div class="panel">
+      <header>
+        <h3 id="dialog-title">Titel</h3>
+        <button class="close" aria-label="Schließen" onclick="closeDialog()">×</button>
+      </header>
+      <div class="content" id="dialog-content"></div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function submitForm(e){
+      e.preventDefault();
+      const form = e.target;
+      const status = document.getElementById('form-status');
+      status.textContent = 'Vielen Dank! Wir melden uns zeitnah.';
+      form.reset();
+    }
+
+    const overlay = document.getElementById('overlay');
+    const dialog = document.getElementById('dialog');
+    function openDialog(type){
+      const title = document.getElementById('dialog-title');
+      const content = document.getElementById('dialog-content');
+      if(type==='impressum'){
+        title.textContent = 'Impressum';
+        content.innerHTML = `
+          <p>Angaben gemäß § 5 TMG</p>
+          <p>Greenteam MG<br>
+          Mönchengladbach<br>
+          Telefon: 0163 2622423 / 0155 68296165<br>
+          E-Mail: greenteam-mg@outlook.de</p>
+          <p>Verantwortlich für den Inhalt: Greenteam MG</p>
+        `;
+      } else if(type==='datenschutz'){
+        title.textContent = 'Datenschutz';
+        content.innerHTML = `
+          <p>Wir verarbeiten personenbezogene Daten ausschließlich zum Zweck der Bearbeitung Ihrer Anfrage. Eine Weitergabe an Dritte erfolgt nicht. Auf Wunsch löschen wir Ihre Daten jederzeit.</p>
+        `;
+      } else if(type==='widerruf'){
+        title.textContent = 'Widerruf';
+        content.innerHTML = `
+          <p>Sie können Ihre Anfrage jederzeit ohne Angabe von Gründen widerrufen. Senden Sie uns hierfür eine E-Mail an greenteam-mg@outlook.de.</p>
+        `;
+      }
+      overlay.classList.add('open');
+      dialog.classList.add('open');
+    }
+    function closeDialog(){
+      overlay.classList.remove('open');
+      dialog.classList.remove('open');
+    }
+  </script>
+</body>
+</html>
